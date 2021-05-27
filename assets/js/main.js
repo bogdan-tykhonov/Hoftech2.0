@@ -92,7 +92,7 @@ function preloader(){
       );
 }, 1000)
 };
-setTimeout(preloader, 0);
+setTimeout(preloader, 2000);
 
 /////////
 
