@@ -83,7 +83,7 @@
         
     }
 };
-document.addEventListener("DOMContentLoaded", function() {
- alert('init);
+window.addEventListener("load", function() {
+ 
     Portfolio.init();
   });
