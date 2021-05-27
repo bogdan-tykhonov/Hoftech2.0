@@ -1,0 +1,252 @@
+
+@mixin font($weight, $minSize, $lastSize) {
+    font-weight: $weight!important;
+    font-size: calc(#{$minSize} + #{$lastSize} * ((100vw - 375px) / (1280 - 375)))!important;
+    @media(min-width:1440px){
+        font-size: $minSize+$lastSize!important;
+    };
+}
+@media(min-width:1200px){
+    .logo:hover {
+        &::before{
+        transform: scaleY(1)!important;
+        transition:all 0.3s ease;
+        }
+        &::after{
+            transform: scaleX(1)!important;
+        transition:all 0.3s ease;
+        }
+        span{
+            transition:all 0.3s ease;
+            color: white;
+        }
+        i{
+            transition:all 0.3s ease;
+            transform: rotate(180deg);
+        }
+        h1{
+            transition: 0.3s ease;
+            color: #ECB956;
+        }
+    }
+}
+@media(min-width:1440px){
+    .elem-1{
+        bottom: -60px!important;
+        right:calc(((100vw - 1290px)/2) - 150px)!important;
+    }
+    .elem-4{
+        left:calc(((100vw - 1290px)/2) + 100px)!important;
+        bottom: -70px!important;
+    }
+    .elem-3{
+       right:calc(((100vw - 1290px)/2) - 0px)!important;
+    top: 150px!important;
+    }
+    .elem-2{
+        top: -80px!important;
+        left:calc(((100vw - 1290px)/2) - 60px)!important;
+       
+    }
+    header{
+        background-size: 100% 100%!important;
+    }
+    .preview{
+        margin-top: 230px!important;
+    }
+}
+@media(max-width:1050px){
+    .advantages-line:last-child{
+        width: 100%!important;
+    }
+}
+@media(max-width:960px){
+    .slider{
+        .slick-arrow{
+            top: 160%!important;
+        }
+    }
+    .form{
+        height: 100%!important;
+        .wrapper{
+            margin-top: 50px;
+            flex-direction: column!important;
+            .form-text{
+                input{
+                    height:5vw;
+                    width: 60vw;
+                }
+            }
+        }
+        .form-img{
+            margin-top: 50px;
+        }
+    }
+    .front{
+        img{
+            width: 80%!important;
+        }
+    }
+    .back{
+        img{
+            width: 60%!important;
+        }
+        button{
+            margin-top: 80%!important;
+        }
+    }
+    .slick-track{
+        height: 45vw!important;
+    }
+    .project-card{
+        margin: 0 60px!important;
+        height: 40vw!important;
+        .portfolio .slider .project-card .front h1 {
+                @include font(600,30px ,20);
+            }
+        }
+    }
+    @media(max-width:840px){
+        .back{
+            img{
+                width: 70%!important;
+            }
+            button{
+                margin-top: 90%!important;
+            }
+        }
+        .portfolio{
+            height: 840px!important;
+        }
+    }
+    @media(max-width:690px){
+        .burger{
+            display: block!important;
+        }
+    .main-nav{
+        display: none;
+    }
+    }
+@media(max-width:567px){
+   body .form {
+        h1{
+            font-size: 40px!important;
+        }
+        .wrapper .contacts-info{
+            align-items: center!important;
+            h2{
+                font-size: 35px!important;
+            }
+            a{
+                font-size: 28px !important;
+            }
+        }
+    }
+    .advantages .advantage-block h2 strong{
+        display: initial!important;
+    }
+    .sroll-top i {
+        font-size: 80px!important;
+    }
+  nav{
+    .logo{
+        h1{
+            font-size: 25px!important;
+        }
+      
+    }
+  }
+    .preview {
+        button{
+            padding: 10px 20px!important;
+        }
+    }
+    .portfolio .slider .project-card .front{
+        .slide-text{
+            width: 90%!important;
+            h1{
+                margin-top: 70%!important;
+                font-size: 30px!important;
+            }
+            p{
+                font-size: 20px!important;
+            }
+        }
+       
+    }
+    .elem-1{
+        bottom: -6vw!important;
+    }
+    .img-element-3, .elem-2, .elem-4{
+        display: none;
+    }
+   
+    .about{
+margin-top: 50px;
+h1{
+    left: 0px !important;
+}
+    }
+    .addition{
+width: 80%!important;
+    }
+    .advantages-line{
+        margin: 0px!important;
+        flex-direction: column;
+        .advantage-block{
+            margin-top: 20px;
+width: 100%!important;
+        }
+    }
+    .preview{
+        flex-direction: column;
+        .previw-text{
+            width: 100%!important;
+        }
+        .prevew-img{
+            margin-top: 50px;
+            align-self: start;
+        }
+        }
+    
+    
+   .slider{
+    .slick-arrow{
+        //bottom: -400px!important;
+        top: 400px!important;
+    }
+   }
+    .form{
+        .wrapper{
+           .form-text{
+            align-items: center!important;
+           }
+            input{
+                height: 30px!important;
+            }
+            button{
+               
+                width: 170px!important;
+                height: 45px!important;
+            }
+        }
+    }
+    footer{
+        i{
+            font-size: 30px!important;
+        }
+    }
+    .slider{
+        min-width: 400px!important;
+        width: 80%!important;
+    }
+    .slick-track{
+        min-height: 370px;
+        height: 70vw!important;
+    }
+    .project-card{
+        min-height: 320px;
+        min-width: 230px!important;
+        height: 65vw!important;
+    }
+}
