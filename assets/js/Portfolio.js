@@ -83,5 +83,6 @@
         
     }
 };
-
-Portfolio.init();
+document.addEventListener("DOMContentLoaded", function() {
+    Portfolio.init();
+  });
